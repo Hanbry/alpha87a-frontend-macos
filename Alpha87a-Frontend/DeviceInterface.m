@@ -9,7 +9,6 @@
 
 @interface DeviceInterface ()
 @property int fileDescriptor;
-
 @end
 
 @implementation DeviceInterface
@@ -41,13 +40,13 @@
 
     struct termios options;
     tcgetattr(self.fileDescriptor, &options);
-    cfsetspeed(&options, B4800); // Baudrate auf 4800 setzen
-    options.c_cflag &= ~PARENB; // Keine Parität verwenden
-    options.c_cflag &= ~CSTOPB; // 1 Stopbit verwenden
-    options.c_cflag &= ~CSIZE;  // Datenbits auf 8 setzen
+    cfsetspeed(&options, B9600);
+    options.c_cflag &= ~PARENB;
+    options.c_cflag &= ~CSTOPB;
+    options.c_cflag &= ~CSIZE;
     options.c_cflag |= CS8;
-    options.c_cflag &= ~CRTSCTS; // Keine Flusssteuerung verwenden
-    options.c_iflag &= ~(IXON | IXOFF | IXANY); // Keine E/A-Flusssteuerung verwenden
+    options.c_cflag &= ~CRTSCTS;
+    options.c_iflag &= ~(IXON | IXOFF | IXANY);
     tcsetattr(self.fileDescriptor, TCSANOW, &options);
 
 
@@ -65,8 +64,8 @@
 }
 
 - (NSString *)read {
-    char buffer[1024];
-    memset(buffer, 0, 1024);
+    char buffer[2048];
+    memset(buffer, 0, 2048);
     ssize_t bytesRead = -1;
     NSString *responseString;
     

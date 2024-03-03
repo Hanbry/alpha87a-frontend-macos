@@ -10,10 +10,46 @@
 
 
 @interface ViewController : NSViewController
+
+typedef NS_ENUM(NSInteger, EnterMode) {
+    kEnterModeOn,
+    kEnterModeOff,
+};
+
 - (IBAction)mainGroupButton:(NSButton *)sender;
 - (IBAction)bandGroupButton:(NSButton *)sender;
 - (IBAction)tuneGroupButton:(NSButton *)sender;
 - (IBAction)mainSwitchButton:(NSButton *)sender;
+
+@property (weak) IBOutlet NSButton *bandButton1;
+@property (weak) IBOutlet NSButton *bandButton2;
+@property (weak) IBOutlet NSButton *bandButton3;
+@property (weak) IBOutlet NSButton *bandButton4;
+@property (weak) IBOutlet NSButton *bandButton5;
+@property (weak) IBOutlet NSButton *bandButton6;
+@property (weak) IBOutlet NSButton *bandButton7;
+@property (weak) IBOutlet NSButton *bandButton8;
+@property (weak) IBOutlet NSButton *bandButton9;
+
+@property (weak) IBOutlet NSButton *segmentButton1;
+@property (weak) IBOutlet NSButton *segmentButton2;
+@property (weak) IBOutlet NSButton *segmentButton3;
+@property (weak) IBOutlet NSButton *segmentButton4;
+@property (weak) IBOutlet NSButton *segmentButton5;
+
+@property (weak) IBOutlet NSButton *defaultButton;
+
+@property (weak) IBOutlet NSButton *tuneDownButton;
+@property (weak) IBOutlet NSButton *tuneUpButton;
+
+@property (weak) IBOutlet NSButton *loadDownButton;
+@property (weak) IBOutlet NSButton *loadUpButton;
+
+@property (weak) IBOutlet NSButton *enterButton;
+
+@property (weak) IBOutlet NSButton *meterTuneButton;
+@property (weak) IBOutlet NSButton *meterIPButton;
+@property (weak) IBOutlet NSButton *meterHVButton;
 
 @property (weak) IBOutlet NSImageView *tuneSquareLamp1;
 @property (weak) IBOutlet NSImageView *tuneSquareLamp2;
@@ -84,9 +120,13 @@
 @property (weak) IBOutlet NSImageView *PLATELamp;
 @property (weak) IBOutlet NSImageView *TRLamp;
 
-// Non UI properties
+@property (weak) IBOutlet NSButton *hiloButton;
+@property (weak) IBOutlet NSButton *oprstbyButton;
 
+
+// Non UI properties
 @property DeviceInterface *mainDeviceInterface;
+@property (nonatomic) EnterMode enterMode;
 
 @end
 

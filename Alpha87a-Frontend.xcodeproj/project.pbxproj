@@ -12,6 +12,7 @@
 		3A0D11BE2992FDAD0096F10F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D11BD2992FDAD0096F10F /* Assets.xcassets */; };
 		3A0D11C12992FDAD0096F10F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D11BF2992FDAD0096F10F /* Main.storyboard */; };
 		3A0D11C32992FDAD0096F10F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D11C22992FDAD0096F10F /* main.m */; };
+		3A0DB3412B82725E0089C422 /* ALPHA87A-Button1RedTopOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A0DB3402B82725E0089C422 /* ALPHA87A-Button1RedTopOff.png */; };
 		3A1B715929B37A5500720B32 /* switchButtonBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1B715729B37A5500720B32 /* switchButtonBottom.png */; };
 		3A1B715A29B37A5500720B32 /* switchButtonTop.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1B715829B37A5500720B32 /* switchButtonTop.png */; };
 		3A1B715F29B37DA000720B32 /* ALPHA87A-Button1Green.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1B715B29B37DA000720B32 /* ALPHA87A-Button1Green.png */; };
@@ -21,12 +22,16 @@
 		3A1B716429B380A400720B32 /* ALPHA87A-SquareLightOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1B716329B380A400720B32 /* ALPHA87A-SquareLightOff.png */; };
 		3A4A19B129FE893700E21B3F /* DeviceInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A19B029FE893700E21B3F /* DeviceInterface.m */; };
 		3A4A19B429FE8A8500E21B3F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4A19B329FE8A8500E21B3F /* IOKit.framework */; };
+		3A9792E82B66C52A00D74BE2 /* switchButtonBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9792E72B66C52A00D74BE2 /* switchButtonBottom.png */; };
+		3A9792EA2B66C54F00D74BE2 /* ALPHA87A-SquareLightOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9792E92B66C54F00D74BE2 /* ALPHA87A-SquareLightOn.png */; };
 		3AB3320E29B2BB3E00CD89B3 /* ALPHA87A-GreenLightOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB3320829B2BB3E00CD89B3 /* ALPHA87A-GreenLightOn.png */; };
 		3AB3320F29B2BB3E00CD89B3 /* ALPHA87A-GreenLightOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB3320929B2BB3E00CD89B3 /* ALPHA87A-GreenLightOff.png */; };
 		3AB3321029B2BB3E00CD89B3 /* ALPHA87A-RedLightOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB3320A29B2BB3E00CD89B3 /* ALPHA87A-RedLightOn.png */; };
 		3AB3321129B2BB3E00CD89B3 /* ALPHA87A-RedLightOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB3320B29B2BB3E00CD89B3 /* ALPHA87A-RedLightOff.png */; };
 		3AB3321229B2BB3E00CD89B3 /* ALPHA87A-OrangeLightOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB3320C29B2BB3E00CD89B3 /* ALPHA87A-OrangeLightOff.png */; };
 		3AB3321329B2BB3E00CD89B3 /* ALPHA87A-OrangeLightOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB3320D29B2BB3E00CD89B3 /* ALPHA87A-OrangeLightOn.png */; };
+		3AECB9902B5D8A1F001C71BF /* ALPHA87A-Button1GreenOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AECB98F2B5D8A1F001C71BF /* ALPHA87A-Button1GreenOff.png */; };
+		3AECB9922B5DA1D3001C71BF /* ALPHA87A-Button1GreenTopOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AECB9912B5DA1D3001C71BF /* ALPHA87A-Button1GreenTopOff.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +44,7 @@
 		3A0D11C02992FDAD0096F10F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A0D11C22992FDAD0096F10F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3A0D11C42992FDAD0096F10F /* Alpha87a_Frontend.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Alpha87a_Frontend.entitlements; sourceTree = "<group>"; };
+		3A0DB3402B82725E0089C422 /* ALPHA87A-Button1RedTopOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ALPHA87A-Button1RedTopOff.png"; sourceTree = "<group>"; };
 		3A1B715729B37A5500720B32 /* switchButtonBottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchButtonBottom.png; sourceTree = "<group>"; };
 		3A1B715829B37A5500720B32 /* switchButtonTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchButtonTop.png; sourceTree = "<group>"; };
 		3A1B715B29B37DA000720B32 /* ALPHA87A-Button1Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ALPHA87A-Button1Green.png"; sourceTree = "<group>"; };
@@ -49,12 +55,16 @@
 		3A4A19AF29FE893600E21B3F /* DeviceInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInterface.h; sourceTree = "<group>"; };
 		3A4A19B029FE893700E21B3F /* DeviceInterface.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceInterface.m; sourceTree = "<group>"; };
 		3A4A19B329FE8A8500E21B3F /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		3A9792E72B66C52A00D74BE2 /* switchButtonBottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchButtonBottom.png; sourceTree = "<group>"; };
+		3A9792E92B66C54F00D74BE2 /* ALPHA87A-SquareLightOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ALPHA87A-SquareLightOn.png"; sourceTree = "<group>"; };
 		3AB3320829B2BB3E00CD89B3 /* ALPHA87A-GreenLightOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ALPHA87A-GreenLightOn.png"; sourceTree = "<group>"; };
 		3AB3320929B2BB3E00CD89B3 /* ALPHA87A-GreenLightOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ALPHA87A-GreenLightOff.png"; sourceTree = "<group>"; };
 		3AB3320A29B2BB3E00CD89B3 /* ALPHA87A-RedLightOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ALPHA87A-RedLightOn.png"; sourceTree = "<group>"; };
 		3AB3320B29B2BB3E00CD89B3 /* ALPHA87A-RedLightOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ALPHA87A-RedLightOff.png"; sourceTree = "<group>"; };
 		3AB3320C29B2BB3E00CD89B3 /* ALPHA87A-OrangeLightOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ALPHA87A-OrangeLightOff.png"; sourceTree = "<group>"; };
 		3AB3320D29B2BB3E00CD89B3 /* ALPHA87A-OrangeLightOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ALPHA87A-OrangeLightOn.png"; sourceTree = "<group>"; };
+		3AECB98F2B5D8A1F001C71BF /* ALPHA87A-Button1GreenOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ALPHA87A-Button1GreenOff.png"; sourceTree = "<group>"; };
+		3AECB9912B5DA1D3001C71BF /* ALPHA87A-Button1GreenTopOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ALPHA87A-Button1GreenTopOff.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +125,15 @@
 		3AFE0AC129AEB93E005FA743 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				3A0DB3402B82725E0089C422 /* ALPHA87A-Button1RedTopOff.png */,
+				3A9792E92B66C54F00D74BE2 /* ALPHA87A-SquareLightOn.png */,
 				3A1B716329B380A400720B32 /* ALPHA87A-SquareLightOff.png */,
+				3A9792E72B66C52A00D74BE2 /* switchButtonBottom.png */,
 				3A1B715B29B37DA000720B32 /* ALPHA87A-Button1Green.png */,
 				3A1B715C29B37DA000720B32 /* ALPHA87A-Button1GreenTop.png */,
+				3AECB9912B5DA1D3001C71BF /* ALPHA87A-Button1GreenTopOff.png */,
 				3A1B715E29B37DA000720B32 /* ALPHA87A-Button1Red.png */,
+				3AECB98F2B5D8A1F001C71BF /* ALPHA87A-Button1GreenOff.png */,
 				3A1B715D29B37DA000720B32 /* ALPHA87A-Button1RedTop.png */,
 				3A1B715729B37A5500720B32 /* switchButtonBottom.png */,
 				3A1B715829B37A5500720B32 /* switchButtonTop.png */,
@@ -195,12 +210,17 @@
 				3A1B716129B37DA000720B32 /* ALPHA87A-Button1RedTop.png in Resources */,
 				3AB3320E29B2BB3E00CD89B3 /* ALPHA87A-GreenLightOn.png in Resources */,
 				3AB3320F29B2BB3E00CD89B3 /* ALPHA87A-GreenLightOff.png in Resources */,
+				3A9792E82B66C52A00D74BE2 /* switchButtonBottom.png in Resources */,
 				3AB3321329B2BB3E00CD89B3 /* ALPHA87A-OrangeLightOn.png in Resources */,
 				3A1B715F29B37DA000720B32 /* ALPHA87A-Button1Green.png in Resources */,
+				3A0DB3412B82725E0089C422 /* ALPHA87A-Button1RedTopOff.png in Resources */,
 				3A0D11C12992FDAD0096F10F /* Main.storyboard in Resources */,
 				3A1B715929B37A5500720B32 /* switchButtonBottom.png in Resources */,
+				3AECB9922B5DA1D3001C71BF /* ALPHA87A-Button1GreenTopOff.png in Resources */,
 				3AB3321129B2BB3E00CD89B3 /* ALPHA87A-RedLightOff.png in Resources */,
+				3AECB9902B5D8A1F001C71BF /* ALPHA87A-Button1GreenOff.png in Resources */,
 				3A1B716429B380A400720B32 /* ALPHA87A-SquareLightOff.png in Resources */,
+				3A9792EA2B66C54F00D74BE2 /* ALPHA87A-SquareLightOn.png in Resources */,
 				3A1B715A29B37A5500720B32 /* switchButtonTop.png in Resources */,
 				3AB3321029B2BB3E00CD89B3 /* ALPHA87A-RedLightOn.png in Resources */,
 				3A1B716029B37DA000720B32 /* ALPHA87A-Button1GreenTop.png in Resources */,
