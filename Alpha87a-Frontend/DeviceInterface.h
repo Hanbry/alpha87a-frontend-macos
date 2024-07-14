@@ -15,6 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)executeCommand:(NSString *)command;
 - (NSString *)read;
+- (NSArray *)serialDevices;
+- (void)connectDevice:(NSString *)deviceName;
+- (void)disconnectDevice;
+
 
 @end
 

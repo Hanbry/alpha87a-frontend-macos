@@ -20,6 +20,7 @@ typedef NS_ENUM(NSInteger, EnterMode) {
 - (IBAction)bandGroupButton:(NSButton *)sender;
 - (IBAction)tuneGroupButton:(NSButton *)sender;
 - (IBAction)mainSwitchButton:(NSButton *)sender;
+- (IBAction)pushSerialDeviceComboBox:(NSComboBox *)sender;
 
 @property (weak) IBOutlet NSButton *bandButton1;
 @property (weak) IBOutlet NSButton *bandButton2;
@@ -123,6 +124,7 @@ typedef NS_ENUM(NSInteger, EnterMode) {
 @property (weak) IBOutlet NSButton *hiloButton;
 @property (weak) IBOutlet NSButton *oprstbyButton;
 
+@property (weak) IBOutlet NSComboBox *serialDeviceComboBox;
 
 // Non UI properties
 @property DeviceInterface *mainDeviceInterface;

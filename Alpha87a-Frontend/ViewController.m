@@ -6,24 +6,43 @@
 //
 
 #import "ViewController.h"
+#import "EnhancedDataView.h"
+
+@interface ViewController ()
+@property NSTimer *mainRcvTimer;
+@property EnhancedDataView *enhancedDataViewController;
+
+@end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Do any additional setup after loading the view.
     self.mainDeviceInterface = [DeviceInterface new];
     
-    // Set up device information polling routine
-    [NSTimer scheduledTimerWithTimeInterval:0.500 target:self selector:@selector(updateUI) userInfo:NULL repeats:YES];
-    //    [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(readResponse) userInfo:NULL repeats:YES];
+    [self.serialDeviceComboBox removeAllItems];
+    [self.serialDeviceComboBox addItemsWithObjectValues:[self.mainDeviceInterface serialDevices]];
+    [self.serialDeviceComboBox selectItemAtIndex:0];
 }
 
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];
 
     // Update the view, if already loaded.
+}
+
+- (void)prepareForSegue:(NSStoryboardSegue *)segue sender:(id)sender {
+    NSWindowController *window = segue.destinationController;
+    self.enhancedDataViewController = (EnhancedDataView *)window.window.contentViewController;
+}
+
+- (IBAction)pushSerialDeviceComboBox:(NSComboBox *)sender {
+    [self.mainRcvTimer invalidate];
+    [self.mainDeviceInterface disconnectDevice];
+    
+    [self.mainDeviceInterface connectDevice:sender.stringValue];
+    self.mainRcvTimer = [NSTimer scheduledTimerWithTimeInterval:0.500 target:self selector:@selector(updateUI) userInfo:NULL repeats:YES];
 }
 
 - (IBAction)mainSwitchButton:(NSButton *)sender {
@@ -134,6 +153,18 @@
     NSNumber *rfl = [settings objectForKey:@"RFL"];
     NSNumber *ig = [settings objectForKey:@"IG"];
     NSNumber *fwd = [settings objectForKey:@"FWD"];
+    NSNumber *freq = [settings objectForKey:@"FREQUENCY"];
+    
+    if (self.enhancedDataViewController) {
+        if (self.enhancedDataViewController.RFOutputValues.count >= 5) [self.enhancedDataViewController.RFOutputValues removeObjectAtIndex:0];
+        if (fwd) [self.enhancedDataViewController.RFOutputValues addObject:fwd];
+        if (self.enhancedDataViewController.gridCurrentValues.count >= 5) [self.enhancedDataViewController.gridCurrentValues removeObjectAtIndex:0];
+        if (ig) [self.enhancedDataViewController.gridCurrentValues addObject:ig];
+        if (self.enhancedDataViewController.reflectedPowerValues.count >= 5) [self.enhancedDataViewController.reflectedPowerValues removeObjectAtIndex:0];
+        if (rfl) [self.enhancedDataViewController.reflectedPowerValues addObject:rfl];
+        self.enhancedDataViewController.frequencyValue = freq.intValue;
+        self.enhancedDataViewController.amplifierValue = [state copy];
+    }
     
     NSArray *rfOutLamps = @[self.rfOutputLamp1, self.rfOutputLamp2, self.rfOutputLamp3, self.rfOutputLamp4, self.rfOutputLamp5, self.rfOutputLamp6, self.rfOutputLamp7, self.rfOutputLamp8, self.rfOutputLamp9, self.rfOutputLamp10, self.rfOutputLamp11, self.rfOutputLamp12, self.rfOutputLamp13, self.rfOutputLamp14, self.rfOutputLamp15, self.rfOutputLamp16, self.rfOutputLamp17, self.rfOutputLamp18, self.rfOutputLamp19, self.rfOutputLamp20];
     
@@ -429,8 +460,6 @@
         dictionary[@"unmatchedResponse"] = unmatchedString;
     }
 
-    NSLog(@"Received: %@", response);
-    NSLog(@"Parsed Dictionary: %@", dictionary);
     return dictionary;
 }
 

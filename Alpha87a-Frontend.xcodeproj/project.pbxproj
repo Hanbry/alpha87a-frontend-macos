@@ -13,13 +13,13 @@
 		3A0D11C12992FDAD0096F10F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0D11BF2992FDAD0096F10F /* Main.storyboard */; };
 		3A0D11C32992FDAD0096F10F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A0D11C22992FDAD0096F10F /* main.m */; };
 		3A0DB3412B82725E0089C422 /* ALPHA87A-Button1RedTopOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A0DB3402B82725E0089C422 /* ALPHA87A-Button1RedTopOff.png */; };
-		3A1B715929B37A5500720B32 /* switchButtonBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1B715729B37A5500720B32 /* switchButtonBottom.png */; };
 		3A1B715A29B37A5500720B32 /* switchButtonTop.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1B715829B37A5500720B32 /* switchButtonTop.png */; };
 		3A1B715F29B37DA000720B32 /* ALPHA87A-Button1Green.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1B715B29B37DA000720B32 /* ALPHA87A-Button1Green.png */; };
 		3A1B716029B37DA000720B32 /* ALPHA87A-Button1GreenTop.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1B715C29B37DA000720B32 /* ALPHA87A-Button1GreenTop.png */; };
 		3A1B716129B37DA000720B32 /* ALPHA87A-Button1RedTop.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1B715D29B37DA000720B32 /* ALPHA87A-Button1RedTop.png */; };
 		3A1B716229B37DA000720B32 /* ALPHA87A-Button1Red.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1B715E29B37DA000720B32 /* ALPHA87A-Button1Red.png */; };
 		3A1B716429B380A400720B32 /* ALPHA87A-SquareLightOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A1B716329B380A400720B32 /* ALPHA87A-SquareLightOff.png */; };
+		3A3B76422BDEADE000008821 /* EnhancedDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3B76412BDEADE000008821 /* EnhancedDataView.m */; };
 		3A4A19B129FE893700E21B3F /* DeviceInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A19B029FE893700E21B3F /* DeviceInterface.m */; };
 		3A4A19B429FE8A8500E21B3F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4A19B329FE8A8500E21B3F /* IOKit.framework */; };
 		3A9792E82B66C52A00D74BE2 /* switchButtonBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A9792E72B66C52A00D74BE2 /* switchButtonBottom.png */; };
@@ -52,6 +52,8 @@
 		3A1B715D29B37DA000720B32 /* ALPHA87A-Button1RedTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ALPHA87A-Button1RedTop.png"; sourceTree = "<group>"; };
 		3A1B715E29B37DA000720B32 /* ALPHA87A-Button1Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ALPHA87A-Button1Red.png"; sourceTree = "<group>"; };
 		3A1B716329B380A400720B32 /* ALPHA87A-SquareLightOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ALPHA87A-SquareLightOff.png"; sourceTree = "<group>"; };
+		3A3B76402BDEADE000008821 /* EnhancedDataView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnhancedDataView.h; sourceTree = "<group>"; };
+		3A3B76412BDEADE000008821 /* EnhancedDataView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnhancedDataView.m; sourceTree = "<group>"; };
 		3A4A19AF29FE893600E21B3F /* DeviceInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInterface.h; sourceTree = "<group>"; };
 		3A4A19B029FE893700E21B3F /* DeviceInterface.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceInterface.m; sourceTree = "<group>"; };
 		3A4A19B329FE8A8500E21B3F /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
@@ -110,6 +112,8 @@
 				3A0D11BF2992FDAD0096F10F /* Main.storyboard */,
 				3A0D11C22992FDAD0096F10F /* main.m */,
 				3A0D11C42992FDAD0096F10F /* Alpha87a_Frontend.entitlements */,
+				3A3B76402BDEADE000008821 /* EnhancedDataView.h */,
+				3A3B76412BDEADE000008821 /* EnhancedDataView.m */,
 			);
 			path = "Alpha87a-Frontend";
 			sourceTree = "<group>";
@@ -174,7 +178,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					3A0D11B32992FDAC0096F10F = {
 						CreatedOnToolsVersion = 14.2;
@@ -215,7 +219,6 @@
 				3A1B715F29B37DA000720B32 /* ALPHA87A-Button1Green.png in Resources */,
 				3A0DB3412B82725E0089C422 /* ALPHA87A-Button1RedTopOff.png in Resources */,
 				3A0D11C12992FDAD0096F10F /* Main.storyboard in Resources */,
-				3A1B715929B37A5500720B32 /* switchButtonBottom.png in Resources */,
 				3AECB9922B5DA1D3001C71BF /* ALPHA87A-Button1GreenTopOff.png in Resources */,
 				3AB3321129B2BB3E00CD89B3 /* ALPHA87A-RedLightOff.png in Resources */,
 				3AECB9902B5D8A1F001C71BF /* ALPHA87A-Button1GreenOff.png in Resources */,
@@ -234,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A3B76422BDEADE000008821 /* EnhancedDataView.m in Sources */,
 				3A0D11BC2992FDAC0096F10F /* ViewController.m in Sources */,
 				3A4A19B129FE893700E21B3F /* DeviceInterface.m in Sources */,
 				3A0D11C32992FDAD0096F10F /* main.m in Sources */,
@@ -290,8 +294,10 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -306,7 +312,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -349,8 +355,10 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -359,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -373,7 +381,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Alpha87a-Frontend/Alpha87a_Frontend.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -381,6 +389,8 @@
 				DEVELOPMENT_TEAM = U3WRAV9PLK;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Alpha87a-Frontend";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -388,6 +398,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adrianlohr.Alpha87a-Frontend";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +422,8 @@
 				DEVELOPMENT_TEAM = U3WRAV9PLK;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Alpha87a-Frontend";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -418,6 +431,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adrianlohr.Alpha87a-Frontend";
 				PRODUCT_NAME = "$(TARGET_NAME)";
