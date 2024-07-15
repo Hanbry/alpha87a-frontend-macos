@@ -1,5 +1,5 @@
-# Alpha 87A macOS Frontend Application
-This is a macOS frontend application that interfaces with the Alpha 87A high-power linear amplifier via a serial interface. The application displays the state of the radio and provides various options and settings for controlling the amplifier.
+# Alpha 87A macOS Remote Control Application
+This is a remote control application for macOS that interfaces with the Alpha 87A high-power linear amplifier via a serial interface. The application displays the state of the radio and provides various options and settings for controlling the amplifier.
 
 # Usage
 1. Power on the Alpha 87A
